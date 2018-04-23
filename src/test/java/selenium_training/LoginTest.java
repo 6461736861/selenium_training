@@ -9,6 +9,7 @@ public class LoginTest extends TestBase {
     public void checkLoginWorks() {
         //driver.navigate().to("http://localhost:8888/litecart/admin/login.php");
         driver.get("http://admin:admin@localhost:8888/litecart/admin/login.php");
+        driver.findElement(By.name("username")).clear();
         driver.findElement(By.name("username")).sendKeys("admin");
         driver.findElement(By.name("password")).sendKeys("admin");
         driver.findElement(By.name("login")).click();

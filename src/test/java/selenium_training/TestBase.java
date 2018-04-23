@@ -14,21 +14,7 @@ public class TestBase {
 
     @Before
     public void start() {
-        if (tlDriver.get() != null) {
-            driver = tlDriver.get();
-            wait = new WebDriverWait(driver, 10);
-            return;
-        }
-
         driver = new ChromeDriver();
-        tlDriver.set(driver);
-        wait = new WebDriverWait(driver, 10);
-
-        Runtime.getRuntime().addShutdownHook(
-                new Thread(() -> {
-                    driver.quit();
-                    driver = null;
-                }));
     }
 
     @After
