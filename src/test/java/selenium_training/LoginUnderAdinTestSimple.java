@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
-public class LoginTest extends TestBase {
+public class LoginUnderAdinTestSimple extends TestBase {
     @Test
     public void checkLoginWorks() {
         //driver.navigate().to("http://localhost:8888/litecart/admin/login.php");
