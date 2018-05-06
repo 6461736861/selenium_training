@@ -41,5 +41,8 @@ public class LoginScenario extends TestBase {
         driver.findElement(By.xpath("//button[@name='login']")).click();
 
         driver.findElement(By.cssSelector(".success")).isDisplayed();
+
+        driver.findElement(By.xpath("//a[@href='http://localhost:8888/litecart/en/logout']")).click();
+        driver.findElement(By.cssSelector(".success")).isDisplayed();
     }
 }
