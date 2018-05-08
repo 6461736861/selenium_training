@@ -6,13 +6,8 @@ import org.openqa.selenium.By;
 
 public class LoginUnderAdinTestSimple extends TestBase {
     @Test
-    public void checkLoginWorks() {
-        //driver.navigate().to("http://localhost:8888/litecart/admin/login.php");
-        driver.get("http://admin:admin@localhost:8888/litecart/admin/login.php");
-        driver.findElement(By.name("username")).clear();
-        driver.findElement(By.name("username")).sendKeys("admin");
-        driver.findElement(By.name("password")).sendKeys("admin");
-        driver.findElement(By.name("login")).click();
+    public void assertYouAreLoggedIn() {
+        loginUnderAdmin();
         Assert.assertEquals("You are now logged in as admin", driver.findElement(By.cssSelector(".success")).getText());
     }
 }
