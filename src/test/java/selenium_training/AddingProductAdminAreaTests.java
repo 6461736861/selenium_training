@@ -4,13 +4,8 @@ import com.github.javafaker.Faker;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import sun.jvm.hotspot.utilities.Assert;
 
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
-import java.net.URL;
 
 public class AddingProductAdminAreaTests extends TestBase {
     @Test
